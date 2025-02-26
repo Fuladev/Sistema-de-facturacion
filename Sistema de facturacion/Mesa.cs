@@ -19,6 +19,6 @@ public class Mesa
 
     public decimal CalcularTotal()
     {
-        return Orden.Sum(producto => producto.Precio);
+        return Orden.Sum(producto => producto.Precio * producto.Cantidad);
     }
 }
